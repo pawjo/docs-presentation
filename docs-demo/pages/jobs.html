@@ -1,0 +1,42 @@
+---
+layout: page
+title: Jobs
+permalink: /jobs/
+---
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Start time</th>
+            <th>Period in minutes</th>
+            <th>Status</th>
+            <th>Descritpion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for job in site.jobs %}
+        <tr>
+            <td>{{ job.name }}</td>
+            <td>
+                {% if job.type == 1 %}
+                Once a day
+                {% elsif job.type == 2 %}
+                Periodic
+                {% endif %}
+            </td>
+            <td>{{ job.startTime }}</td>
+            <td>{{ job.period }}</td>
+            <td>
+                {% if job.status == 1 %}
+                Enabled
+                {% elsif job.status == 0 %}
+                Disbled
+                {% endif %}
+            </td>
+            <td>{{ job.content }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
