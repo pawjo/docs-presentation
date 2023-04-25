@@ -1,5 +1,5 @@
 --- 
-layout: page
+id: workflow
 title: Workflow
 permalink: /workflow/
 ---

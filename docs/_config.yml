@@ -27,7 +27,8 @@ url: https://pawjo.github.io # the base hostname & protocol for your site, e.g. 
 
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 plugins:
   - jekyll-feed
 
@@ -50,6 +51,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+sidebar:
+  index
+  endpoints
+  jobs
+  workflow
+
+search_enabled: true
 
 collections:
   endpoints:
