@@ -53,10 +53,10 @@ plugins:
 #   - vendor/ruby/
 
 sidebar:
-  index
-  endpoints
-  jobs
-  workflow
+  - index
+  - endpoints
+  - jobs
+  - workflow
 
 search_enabled: true
 
